@@ -1,0 +1,24 @@
+Compiler Stages
+
+1. Lexer
+    Turns raw text into tokens
+    eg: let x = 5 → LET IDENT(x) EQ INT(5)
+
+2. Parser
+    Turns tokens into an AST (Abstract Syntax Tree)
+    Enforces grammar
+
+3. Semantic analysis
+    Type checking
+    Scope rules
+
+4. IR or Code Generation
+    EITHER
+        Generate machine code
+        Generate bytecode
+    OR 
+        Transpile to another language (C, LLVM IR, etc)
+
+5. Optimisation (optional early on)
+    Dead code elimination
+    Constant folding

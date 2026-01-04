@@ -1,0 +1,5 @@
+program     ::= statement*
+statement   ::= "let" IDENT "=" expr
+expr        ::= term (("+" | "-") term)*
+term        ::= factor (("*" | "/") factor)*
+factor      ::= INT | IDENT | "(" expr ")"
