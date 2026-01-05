@@ -1,0 +1,12 @@
+PRINT "hello world"
+INPUT nums
+
+LET x = 0
+LET y = x
+
+WHILE nums > 0 REPEAT
+    PRINT x
+    LET z = x + y
+    LET nums = nums - 1
+    
+ENDWHILE
